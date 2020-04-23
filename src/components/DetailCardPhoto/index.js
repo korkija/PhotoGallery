@@ -52,6 +52,7 @@ export const DetailCardPhoto = ({photoDetails}) => {
 const styles = StyleSheet.create({
   containerCard: {
     borderRadius: 10,
+    padding: 10,
     flex: 1,
   },
   images: {
