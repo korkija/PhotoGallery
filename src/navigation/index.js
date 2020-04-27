@@ -1,7 +1,3 @@
-// import {AppLoading, Screen} from 'expo';
-// import {Asset} from 'expo-asset';
-// import * as Font from 'expo-font';
-// import * as WebBrowser from 'expo-web-browser';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -15,11 +11,15 @@ const ScreensStack = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          options={{title: 'FIRST'}}
+          options={{title: 'Gallery'}}
           name="galleryScreen"
           component={GalleryScreen}
         />
-        <Stack.Screen name="detailsScreen" component={DetailsScreen} />
+        <Stack.Screen
+          options={{title: 'Photo'}}
+          name="detailsScreen"
+          component={DetailsScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

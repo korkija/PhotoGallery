@@ -5,24 +5,7 @@
  * @format
  * @flow strict-local
  */
-
 import React from 'react';
-// import {
-//   SafeAreaView,
-//   StyleSheet,
-//   ScrollView,
-//   View,
-//   Text,
-//   StatusBar,
-// } from 'react-native';
-//
-// import {
-//   Header,
-//   LearnMoreLinks,
-//   Colors,
-//   DebugInstructions,
-//   ReloadInstructions,
-// } from 'react-native/Libraries/NewAppScreen';
 import {Provider} from 'react-redux';
 import {YellowBox} from 'react-native';
 import {store} from './src/redux/store';

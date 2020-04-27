@@ -1,6 +1,6 @@
 import React from 'react';
 import {SmallCardPhoto} from '../SmallCardPhoto';
-import {Text, View, FlatList, StyleSheet} from 'react-native';
+import {FlatList} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
 export const ListPhotoContainer = ({photosList}) => {
@@ -22,15 +22,7 @@ export const ListPhotoContainer = ({photosList}) => {
           onPress={() => showDetails(item)}
         />
       )}
-      keyExtractor={(item, index) => item.id}
+      keyExtractor={(item) => item.id}
     />
   );
 };
-//
-// const styles = StyleSheet.create({
-//   listCard: {
-//     backgroundColor: '#aca',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });
