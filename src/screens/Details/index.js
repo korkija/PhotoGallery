@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {DetailCardPhoto} from '../../components/DetailCardPhoto';
+import {DetailCardPhoto} from '../../components';
 
 export const DetailsScreen = ({route}) => {
   const {photo} = route.params;

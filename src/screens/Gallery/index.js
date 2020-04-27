@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, View} from 'react-native';
-import {ListPhotoContainer} from '../../components/ListPhoto';
+import {ListPhotoContainer} from '../../components';
 import {getListPhotos} from '../../redux/actions/photo';
 import {connect} from 'react-redux';
 

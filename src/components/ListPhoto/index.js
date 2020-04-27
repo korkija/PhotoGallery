@@ -1,5 +1,5 @@
 import React from 'react';
-import {SmallCardPhoto} from '../SmallCardPhoto';
+import {SmallCardPhoto} from '../';
 import {FlatList} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
