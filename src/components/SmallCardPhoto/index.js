@@ -15,6 +15,7 @@ export const SmallCardPhoto = ({
   width,
   height,
   altDescription,
+  name,
   onPress,
 }) => {
   const heightImage = (height * (windowWidth - 70)) / width;
@@ -27,6 +28,10 @@ export const SmallCardPhoto = ({
       </TouchableOpacity>
       <View>
         <Text style={styles.text}>{altDescription}</Text>
+        <Text style={styles.textAuthor}>
+          Author:
+          <Text style={styles.textName}> {name}</Text>
+        </Text>
       </View>
     </View>
   );
@@ -52,5 +57,13 @@ const styles = StyleSheet.create({
   text: {
     textAlign: 'center',
     fontSize: 20,
+  },
+  textAuthor: {
+    textAlign: 'right',
+    fontSize: 12,
+  },
+  textName: {
+    textAlign: 'center',
+    fontSize: 18,
   },
 });

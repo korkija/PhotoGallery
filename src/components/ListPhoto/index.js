@@ -19,6 +19,7 @@ export const ListPhotoContainer = ({photosList}) => {
           width={item.width}
           height={item.height}
           altDescription={item.alt_description}
+          name={item.user.name}
           onPress={() => showDetails(item)}
         />
       )}
